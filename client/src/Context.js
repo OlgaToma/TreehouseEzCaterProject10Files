@@ -4,6 +4,7 @@ import Cookies from 'js-cookie';
 
 const Context = React.createContext(); 
 
+// Store global state
 export class Provider extends Component {
 
   constructor() {
