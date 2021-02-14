@@ -4,6 +4,7 @@ import Data from '../Data';
 import ReactMarkdown from 'react-markdown'
 import Form from './Form'
 
+// Create a single course
 export default class CourseCreate extends Component {
     constructor() {
         super();
@@ -24,10 +25,7 @@ export default class CourseCreate extends Component {
         errors: []
     }
 
-    componentDidMount() {   
-        // Nothing.       
-    }
-
+    // When a form field changes, set the state
     change = (event) => {
         const name = event.target.name;
         const value = event.target.value;
@@ -40,6 +38,7 @@ export default class CourseCreate extends Component {
         });
     }
 
+    // Save the course when the form is submitted
     handleSubmit = (event) => {
         event.preventDefault();
         const { context } = this.props;

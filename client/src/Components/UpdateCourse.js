@@ -4,6 +4,7 @@ import Data from '../Data';
 import ReactMarkdown from 'react-markdown'
 import Form from './Form'
 
+// Allow the course to be updated if the user has access to do so
 export default class CourseUpdate extends Component {
     constructor() {
         super();
@@ -24,6 +25,7 @@ export default class CourseUpdate extends Component {
         errors: []
     }
 
+    // Retrieve the course when the component mounts
     componentDidMount() {   
         const courseId = this.props.match.params.id;
         this.data.getCourse(courseId)

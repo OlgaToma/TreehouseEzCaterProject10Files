@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Data from '../Data';
 import ReactMarkdown from 'react-markdown'
 
+// Create the course detail component
 export default class CourseDetail extends Component {
     constructor() {
         super();
@@ -99,7 +100,7 @@ export default class CourseDetail extends Component {
                     <ul className="course--stats--list">
                         <li className="course--stats--list--item">
                             <h4>Estimated Time</h4>
-                            <h3><ReactMarkdown children={course.estimatedTime} /></h3>
+                            <h3>{course.estimatedTime}</h3>
                         </li>
                         <li className="course--stats--list--item">
                             <h4>Materials Needed</h4>

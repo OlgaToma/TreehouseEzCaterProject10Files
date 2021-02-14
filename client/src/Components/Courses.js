@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Data from '../Data';
 
+// List all courses
 export default class Courses extends Component {
 
     constructor() {
@@ -13,6 +14,7 @@ export default class Courses extends Component {
         courses: []
     }
 
+    // When the component mounts, retrieve the courses
     componentDidMount() {   
         this.data.getCourses()
             .then(data => {
